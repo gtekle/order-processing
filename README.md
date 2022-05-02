@@ -1,8 +1,9 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Order Processing App
 
-> In this project, a rails order processing app is developed that can be used to create, read, update and delete customers and orders.
+> In this project, a rails order processing app that can handle creating, reading, updating and deleting products, customers and orders for a fictious order processing company is developed.
+
+> ## ER Diagram
+> ![](./app/assets/images/order-processing-erd.png)
 
 
 ## Built With
