@@ -1,0 +1,34 @@
+nav {
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-link {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.logo-link:hover {
+  color: blue;
+}
+
+nav .nav-list {
+  display: flex;
+  justify-content: flex-end; 
+  list-style: none;
+  padding: 0;
+  gap: 16px;
+}
+
+nav .nav-link {
+ text-decoration: none;
+ font-weight: 600;
+ font-size: 1.2rem;
+}
+
+nav .nav-link:hover {
+ color: blue;
+}
