@@ -1,0 +1,16 @@
+.customer-details {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.customer-details li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid grey;
+}
+
+.customer-details li + li {
+  border-top: 0;
+}

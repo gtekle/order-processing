@@ -13,3 +13,57 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  max-width: 90%;
+  margin: auto;
+}
+
+.customers-list {
+  list-style: none;
+  padding: 0;
+}
+
+.customer {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border: 1px solid gray;
+  padding-left: 10px;
+}
+
+.customer + .customer {
+  border-top: 0;
+}
+
+.customer span {
+  padding: 5px;
+  flex: 1;
+}
+
+.customer button {
+  border: 1px solid grey;
+  cursor: pointer;
+  background-color: green;
+  color: #fff;
+  margin: 4px 2px;
+  border-radius: 4px;
+}
+
+.customer span + span {
+  border-left: 1px solid gray;
+}
+
+.new {
+  border: 1px solid grey;
+  text-decoration: none;
+  border-radius: 50%;
+  padding: 12px 6px;
+  background: none;
+  color: blue;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+}

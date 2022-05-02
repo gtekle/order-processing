@@ -1,0 +1,27 @@
+<%= form_with model: @customer do |form| %>
+  <div>
+    <%= form.label :first_name %><br>
+    <%= form.text_field :first_name %>
+    <% @customer.errors.full_messages_for(:first_name).each do |message| %>
+      <div class="error"><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :last_name %><br>
+    <%= form.text_area :last_name %>
+  </div>
+  <div>
+    <%= form.label :email %><br>
+    <%= form.text_field :email %>
+  </div>
+
+  <div>
+    <%= form.label :phone_number %><br>
+    <%= form.text_area :phone_number %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
