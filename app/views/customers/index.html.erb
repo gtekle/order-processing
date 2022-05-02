@@ -4,12 +4,15 @@
   <h2>Customers</h2>
   <div class="new-customer"> <%= link_to "New Customer", new_customer_path %></div>
   <ul class="customers-list">
-    <%@customers.each do |customer|%>
+    <% if @customers.nil? || @customers.empty?%>
+      <li> No customers are registered, yet! </li>
+      <%end%>
+    <%@customers&.each do |customer|%>
       <li class="customer">
-        <span><%= customer.first_name %></span>
-        <span><%= customer.last_name %></span>
-        <span><%= customer.email %></span>
-        <span><%= customer.phone_number %></span>
+        <span><%= customer&.first_name %></span>
+        <span><%= customer&.last_name %></span>
+        <span><%= customer&.email %></span>
+        <span><%= customer&.phone_number %></span>
         <span>
           <%= link_to "Details", customer %>
           <%= link_to "Edit", edit_customer_path(customer) %>
