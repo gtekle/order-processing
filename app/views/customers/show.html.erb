@@ -1,2 +1,17 @@
-<h1>Customers#show</h1>
-<p>Find me in app/views/customers/show.html.erb</p>
+<%= render "shared/menu" %>
+
+<h2>Customer Details</h2>
+<ul class="customer-details">
+  <li>
+    <strong>First Name:</strong>
+    <span><%= @customer.first_name %></span></li>
+  <li>
+    <strong>Last Name:</strong>
+    <span><%= @customer.last_name %></span></li>
+  <li>
+    <strong>Email:</strong>
+    <span><%= @customer.email %></span></li>
+  <li>
+    <strong>Phone Number:</strong>
+    <span><%= @customer.phone_number %></span></li>
+</ul>
