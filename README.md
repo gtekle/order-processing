@@ -14,26 +14,26 @@
 
 ## Live Demo
 
- coming soon!
+ [live link](https://order-processing-tek.herokuapp.com/)
 
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
-> - Run `git clone https://github.com/gtekle/blog-app.git`
-> - Run `cd blog-app` to change to project root directory
-> - Run `bundle install`
-> - Run `rails db:create`
-> - Run `rails db:migrate`
-> - Run `npm install`
-> - Run `rails s` to run the app
-> - Opn `http://localhost:3000/` on your browser
+>- Run `git clone https://github.com/gtekle/order-processing.git`
+>- Run `cd order-processing` to change to project root directory
+>- Run `bundle install`
+>- Run `rails db:create`
+>- Run `rails db:migrate`
+>- Run `npm install`
+>- Run `rails s` to run the app
+>- Opn `http://localhost:3000/` on your browser
 
 
 ### Prerequisites
 - Text Editor (e.g. VS Code, Sublime text)
-- git
+- Git
 - Node.js
 
 ### Setup
@@ -46,9 +46,15 @@ To get a local copy up and running follow these simple example steps.
 ### Usage
 
 ### Run tests
+- Run `$ bundler exec rspec spec`
 
 ### Deployment
-
+- Run `$ heroku login`
+- Run `$ heroku create`
+- Run `$ git push heroku development:main`
+- Run `$ heroku run rails db:migrate`
+- Run `$ heroku open` to open the deployed app
+- Run `$ heroku logs -t` to see deployment log
 
 ## Author
 
@@ -69,7 +75,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse
+- [Microverse](https://www.microverse.org/)
 
 ## 📝 License
 
